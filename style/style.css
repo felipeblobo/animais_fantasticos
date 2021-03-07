@@ -1,9 +1,10 @@
 :root {
-  --kindWhite: #fafaed;
+  --kindWhite: #f0f0f0;
   --kindGrey: #222222;
   --kindGreen: #45a764;
   --kindRed: #ee5544;
   --decorationBar: #32bf84;
+  --kindBlue: #1D9ECE;
 }
 
 * {
@@ -18,7 +19,7 @@ body {
   -webkit-font-smoothing: antialiased;
   display: grid;
   grid-template-columns: 1fr 120px minmax(300px, 1000px) 1fr;
-  font: Helvetica, Arial;
+  font-family: 'Roboto', sans-serif;
 }
 
 .menu {
@@ -40,7 +41,7 @@ body {
   margin-right: 10px;
   color: var(--kindGrey);
   text-decoration: none;
-  font: bold 0.875rem "IBM Plex Serif", serif;
+  font: bold 0.875rem "Shippori Mincho B1", serif;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
 }
@@ -64,8 +65,12 @@ body {
   grid-column: 1 / 4;
 }
 
+#faqTitle, #contactTitle {
+  font-size: 4rem;
+}
+
 .animals h2 {
-  font-family: "IBM Plex Serif", serif;
+  font-family: "Shippori Mincho B1", serif;
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -83,13 +88,14 @@ body {
 }
 
 .animals p {
-  font-family: Helvetica, Arial;
-  font-size: 1.1rem;
-  line-height: 1.6rem;
+  
+  font-size: 1.2rem;
+  line-height: 1.8rem;
   margin-bottom: 1rem;
 }
 
 .animalsList {
+  margin-top: 2rem;
   height: 370px;
   overflow-y: scroll;
   grid-column: 2;
@@ -100,7 +106,7 @@ body {
 }
 
 .animalsList::-webkit-scrollbar-thumb {
-  background: var(--decorationBar);
+  background: var(--kindBlue);
   border-left: 6px solid var(--kindWhite);
 }
 
@@ -109,6 +115,7 @@ body {
 }
 
 .animalsDescription {
+  margin-top: 2rem;
   grid-column: 3;
   
 }
@@ -123,11 +130,12 @@ body {
 }
 
 .faqList dt {
-  font-family: "IBM Plex Serif", serif;
+  font-family: "Shippori Mincho B1", serif;
   font-weight: bold;
   margin-top: 2rem;
   margin-bottom: .5rem;
-  color: var(--decorationBar);
+  color: var(--kindBlue);
+  font-size: 1.4rem;
 }
 
 .faqList dt::before {
@@ -136,12 +144,14 @@ body {
   width: 20px;
   height: 10px;
   margin-right: 10px;
-  background: var(--decorationBar);
+  background: var(--kindBlue);
 }
 
 .faqList dd {
   margin-bottom: .5rem;
   margin-left: 30px;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
 }
 
 
@@ -174,9 +184,23 @@ body {
 
 }
 
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.socialMedia {
+  padding-top: 1rem;
+}
+
+#git {
+  margin-right: .3rem;
+}
+
 .copyright p {
   padding: 20px;
-  font-family: 'IBM Plex Serif', sans-serif;
+  font-family: "Shippori Mincho B1", serif;
   font-weight: bold;
 }
 
@@ -217,6 +241,10 @@ ul {
 
   .gridSection h1 {
     font-size: 4rem;
+  }
+
+  #faqTitle, #contactTitle {
+    font-size: 3rem;
   }
 
   .menu {
