@@ -22,6 +22,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+
 .menu {
   grid-column: 3 / 5;
   margin-top: 2rem;
@@ -53,7 +54,7 @@ body {
   display: grid;
   grid-template-columns: 90px 300px 1fr;
   grid-gap: 20px;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .titles {
@@ -67,6 +68,7 @@ body {
 
 #faqTitle, #contactTitle {
   font-size: 4rem;
+  grid-column: 2 / 4;
 }
 
 .animals h2 {
@@ -179,7 +181,6 @@ body {
 
 .copyright {
   grid-column: 3 / 5;
-  margin-bottom: 2rem;
   background: var(--decorationBar);
 
 }
@@ -245,9 +246,7 @@ ul {
 
   #faqTitle, #contactTitle {
     font-size: 3rem;
-  }
-
-  .menu {
+  }  .menu {
     margin-top: 0px;
 
   }
@@ -255,4 +254,12 @@ ul {
   .copyright{
     margin-bottom: 0px
   }
+}
+
+@media (max-width: 320px) {
+
+  .gridSection h1 {
+    font-size: 3rem;
+  }
+
 }
