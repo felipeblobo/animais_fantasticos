@@ -1,10 +1,20 @@
-const imagens = document.getElementsByTagName('img');
+const tabMenu = document.querySelectorAll('.jsTabMenu li');
+const tabContent = document.querySelectorAll('.jsTabContent section');
 
-// const linksInternos = document.querySelectorAll('["href=^#"]');
+if(tabMenu.len && tabContent.length) {
 
-const primeiroH2 = document.querySelector('.animalsDescription h2');
+    function activeTab(index) {
+        tabContent.forEach((section) => {
+            section.classList.remove('active');
+        })
+        tabContent[index].classList.add('active');
+    };
+    
+    
+    tabMenu.forEach((item, index) => {
+        item.addEventListener('click', () => {
+            activeTab(index);
+        })
+    });
+}
 
-const todososP = document.querySelectorAll('p');
-const ultimoP = todososP[todososP.length - 1];
-
-const seisimagens = document.querySelectorAll('img[src^="http"]')    ;

@@ -12,6 +12,9 @@
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="./style/style.css" />
+    <script>
+      document.documentElement.className += ' js';
+    </script>
     <title>Aves Fantásticas</title>
   </head>
 
@@ -30,7 +33,7 @@
     <section class="gridSection animals" id="animals">
       
       <h1 class='titles'>Aves Fantásticas</h1>
-      <ul class='animalsList'>
+      <ul class='animalsList jsTabMenu'>
         <li>
           <img
             src="https://images.unsplash.com/photo-1445820200644-69f87d946277?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=333&q=80"
@@ -69,8 +72,8 @@
           />
         </li>
       </ul>
-      <div id='aves' class="animalsDescription">
-        <section>
+      <div id='aves' class="animalsDescription jsTabContent">
+        <section class='active'>
           <h2>Arara-Azul</h2>
           <p>
             A arara-azul-grande (<i>Anodorhynchus hyacinthinus</i>) ou
