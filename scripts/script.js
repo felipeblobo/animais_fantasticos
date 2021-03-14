@@ -36,3 +36,23 @@
   }
   
 })();
+
+
+(function smoothScroll () {
+    const internalLinks = document.querySelectorAll('.jsMenu a[href^="#"]');
+  function scrollToSection(e) {
+    e.preventDefault();
+    const href = e.currentTarget.getAttribute('href');
+    const section = document.querySelector(href);
+    const higherPortion = section.offsetTop;
+    window.scrollTo({
+      top: higherPortion,
+      behavior: 'smooth'
+    })
+  }
+  internalLinks.forEach((link) => {
+    link.addEventListener('click', scrollToSection);
+  })
+
+})();
+
