@@ -35,7 +35,9 @@
   }
 })();
 
-(function smoothScroll() {
+// Substituido por código css:
+
+/*(function smoothScroll() {
   const internalLinks = document.querySelectorAll('.jsMenu a[href^="#"]');
   function scrollToSection(e) {
     e.preventDefault();
@@ -51,6 +53,7 @@
     link.addEventListener("click", scrollToSection);
   });
 })();
+*/
 
 (function showWithScroll() {
   const sections = document.querySelectorAll(".jsScroll");
