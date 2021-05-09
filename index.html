@@ -20,7 +20,7 @@
 
   <body>
     
-    <nav class="jsMenu menu">
+    <nav class="jsMenu" data-menu="suave">
       <ul>
         <li><a href="#animals">Aves</a></li>
         <li><a href="#faq">Faq</a></li>
@@ -30,10 +30,10 @@
     </nav>
 
     
-    <section class="gridSection animals jsScroll" id="animals">
+    <section class="gridSection animals"  data-anime="scroll" id="animals">
       
       <h1 class='titles'>Aves Fantásticas</h1>
-      <ul class='animalsList jsTabMenu'>
+      <ul class='animalsList' data-tab='menu'>
         <li>
           <img
             src="https://images.unsplash.com/photo-1445820200644-69f87d946277?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=333&q=80"
@@ -72,8 +72,8 @@
           />
         </li>
       </ul>
-      <div id='aves' class="animalsDescription jsTabContent">
-        <section>
+      <div id='aves' class="animalsDescription" data-tab="content">
+        <section data-anime="show-right">
           <h2>Arara-Azul</h2>
           <p>
             A arara-azul-grande (<i>Anodorhynchus hyacinthinus</i>) ou
@@ -96,7 +96,7 @@
           </p>
         </section>
 
-        <section>
+        <section data-anime="show-right">
           <h2>Tuim</h2>
           <p>
             Tuim é o nome comum dado a pequenas aves psitaciformes do género
@@ -117,7 +117,7 @@
           </p>
         </section>
 
-        <section>
+        <section data-anime="show-down">
           <h2>Arara Vermelha</h2>
           <p>
             A Arara-Vermelha ou Arara Vermelha-Grande (<i>Ara chloropterus</i>)
@@ -133,7 +133,7 @@
           </p>
         </section>
 
-        <section>
+        <section data-anime="show-down">
           <h2>Jandaia</h2>
           <p>
             A jandaia-verdadeira (<i>Aratinga jandaya</i>) é uma ave da família
@@ -150,7 +150,7 @@
           </p>
         </section>
 
-        <section>
+        <section data-anime="show-right">
           <h2>Tucano</h2>
           <p>Os tucanos são aves da família Ramphastidae que vivem nas florestas da América Central e América do Sul. A família inclui cinco gêneros e mais de quarenta espécies diferentes. Possuem bicos notavelmente grandes e coloridos, que possuem a função de termorregulação para as muitas espécies que passam muito tempo na copa da floresta exposta ao sol tropical quente.
           </p>
@@ -159,7 +159,7 @@
           </p>
         </section>
 
-        <section>
+        <section data-anime="show-right">
           <h2>Arara Canindé</h2>
           <p>
             A arara-canindé (Ara ararauna, Linnaeus, 1758), também conhecida como arara-de-barriga-amarela, arari, arara-amarela, arara-azul-e-amarela, araraí e canindé, é uma das mais conhecidas representantes do gênero <b>Ara</b>, sendo uma das espécies emblemáticas do cerrado brasileiro e importante para muitas comunidades indígenas.
@@ -175,9 +175,9 @@
       </div>
     </section>
     
-    <section class="gridSection faq jsScroll" id="faq">
+    <section  class="gridSection faq" data-anime="scroll" id="faq">
       <h1 id ='faqTitle' class='titles'>FAQ</h1>
-      <dl class='faqList jsAccordion'>
+      <dl class='faqList' data-anime="accordion">
         <dt class='active'>Qual ave vive mais?</dt>
         <dd class='active'>
           A águia é a ave que possui a maior longevidade da espécie. Chega a
@@ -213,7 +213,7 @@
       </dl>
     </section>
     
-    <section class="gridSection contact jsScroll" id="contact">
+    <section class="gridSection contact" data-anime="scroll" id="contact">
       <h1 id='contactTitle' class='titles'>Contato</h1>
       <div class="map">
         <img src="./img/mapa.png" alt="mapa" />
