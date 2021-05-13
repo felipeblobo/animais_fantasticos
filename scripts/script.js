@@ -75,3 +75,32 @@
     window.addEventListener("scroll", animatedScroll);
   }
 })();
+
+
+function initModal() {
+
+}
+
+const botaoAbrir = document.querySelector('[data-modal="abrir"]');
+const botaoFechar = document.querySelector('[data-modal="fechar"]');
+const containerModal = document.querySelector('[data-modal="container"]')
+
+function abrirModal(event) {
+  event.preventDefault();
+  containerModal.classList.add('active')
+}
+
+function fecharModal(event) {
+  event.preventDefault();
+  containerModal.classList.remove('active')
+}
+
+function cliqueForaDoModal(event) {
+  if(event.target === this)
+   fecharModal(event);
+}
+
+botaoAbrir.addEventListener('click', abrirModal);
+botaoFechar.addEventListener('click', fecharModal);
+containerModal.addEventListener('click', cliqueForaDoModal);
+
